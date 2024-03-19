@@ -1,0 +1,17 @@
+{
+  "name": "queuebot",
+  "version": "1.0.0",
+  "description": "An ai powered Chatbot",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon script.js"
+  },
+  "author": "Haseeb Iqbal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

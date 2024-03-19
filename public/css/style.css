@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131314;
+    overflow-y: hidden;
+}
+
+@media (max-width: 780px) {
+    nav {
+        background-color: #1e1f20;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    nav ul li {
+        list-style: none;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    nav ul li h1 {}
+
+    nav ul li:last-child {
+        width: 41px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        height: 40px;
+    }
+
+    nav ul li:last-child:hover {
+        background-color: rgba(212, 212, 212, 0.26);
+    }
+
+    .option_menue {
+        background-color: #1e1f20;
+        width: 100vw;
+        height: 30svh;
+        position: absolute;
+        bottom: -30svh;
+        transition: .2s ease-out;
+    }
+
+    .option_menue.visible {
+        bottom: 0;
+        z-index: 1;
+    }
+
+    main {
+        background-color: #131314;
+        height: 79svh;
+        overflow-y: scroll;
+    }
+
+    footer {
+        /* background: rgba(255, 0, 0, 0.301); */
+        width: 100vw;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    form textarea {
+        height: auto;
+        resize: vertical;
+        width: 91vw;
+        background-color: #1e1f20;
+        border-radius: 30px;
+        /* text-align: center; */
+        outline: none;
+        font-family: "Open Sans", sans-serif;
+        padding: 20px 10px;
+        font-size: 1rem;
+        border: none;
+        color: rgba(223, 223, 223, 0.836);
+        text-wrap: wrap;
+        line-height: 20px;
+    }
+
+    form img {
+        filter: invert(1);
+    }
+
+    form .send {
+        /* background-color: red; */
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 50%;
+        right: 40px;
+        transform: translate(0%, 50%);
+        backdrop-filter: blur(1)
+    }
+
+    form .send:hover {
+        background-color: rgba(0, 140, 255, 0.541);
+    }
+
+    .response {
+        background-color: #1e1f20;
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 0 10px;
+        margin-top: 10px;
+        border: .5px solid rgba(168, 166, 166, 0.87);
+        border-radius: 10px;
+        color: rgba(255, 255, 255, 0.79);
+        font-family: "Open Sans", sans-serif;
+        font-size: small;
+    }
+
+    .bot_image img {
+        width: 40px;
+    }
+}
